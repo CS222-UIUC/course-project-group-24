@@ -1,0 +1,9 @@
+This will be our folder to record what everyone contributed to the group every week :)
+
+10/7:
+Adriana - researched API implementation: 
+   - I found an API by asprise that can scan receipts by taking an image of the receipt (supports JPEG, PNG, PDF, TIFF files) and
+     returns the information recognized as a json file.
+   - Sample implementation: http://asprise.com/receipt-ocr/blog-github-java-receipt-ocr-api-library-free-example-code-open-source
+     - this is for java but it should work with kotlin as well
+   - Documentation: http://asprise.com/ocr/api/docs/html/receipt-ocr.html
