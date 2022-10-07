@@ -15,14 +15,14 @@ public class JavaReceiptOcr {
 		String receiptOcrEndpoint = "https://ocr.asprise.com/api/v1/receipt"; // Receipt OCR API endpoint
 		File imageFile = new File("receipt.jpg");
 
-		System.out.println("=== Java Receipt OCR Demo - Need help? Email support@asprise.com ===");
+		//System.out.println("=== Java Receipt OCR Demo - Need help? Email support@asprise.com ===");
 
 		try (CloseableHttpClient client = HttpClients.createDefault()) {
 			HttpPost post = new HttpPost(receiptOcrEndpoint);
 			post.setEntity(MultipartEntityBuilder.create()
 				.addTextBody("client_id", "TEST")       // Use 'TEST' for testing purpose
 				.addTextBody("recognizer", "auto")      // can be 'US', 'CA', 'JP', 'SG' or 'auto'
-				.addTextBody("ref_no", "ocr_java_123'") // optional caller provided ref code
+				//.addTextBody("ref_no", "ocr_java_123'") // optional caller provided ref code
 				.addPart("file", new FileBody(imageFile))    // the image file
 				.build());
 
@@ -32,4 +32,3 @@ public class JavaReceiptOcr {
 		}
 	}
 }
-
