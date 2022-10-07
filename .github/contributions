@@ -7,3 +7,7 @@ Adriana - researched API implementation:
    - Sample implementation: http://asprise.com/receipt-ocr/blog-github-java-receipt-ocr-api-library-free-example-code-open-source
      - this is for java but it should work with kotlin as well
    - Documentation: http://asprise.com/ocr/api/docs/html/receipt-ocr.html
+   - I attempted to add the implementation code and xml file (for dependencies) into github but did not write
+     any extra tests because there are already tests (try) to protect from exceptions (in case the file was not read, etc.).
+   - We will need an image file for this implementation to work and process the image (it will need to be named imageFile)
+   - Created contributions file
