@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tests/Tests.iml" filepath="$PROJECT_DIR$/Tests/Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/course-project-group-24.iml" filepath="$PROJECT_DIR$/.idea/course-project-group-24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReceiptAPI/receipt-ocr.iml" filepath="$PROJECT_DIR$/ReceiptAPI/receipt-ocr.iml" />
+    </modules>
+  </component>
+</project>
