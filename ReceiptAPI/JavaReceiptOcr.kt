@@ -5,7 +5,6 @@ object JavaReceiptOcr {
     fun main(args: Array<String?>?) {
         val receiptOcrEndpoint = "https://ocr.asprise.com/api/v1/receipt" // Receipt OCR API endpoint
         val imageFile = File("receipt.png")
-        val resultFile = File("result.JSON")
         HttpClients.createDefault().use { client ->
             val post = HttpPost(receiptOcrEndpoint)
             post.setEntity(
@@ -17,7 +16,7 @@ object JavaReceiptOcr {
                     .build()
             )
             client.execute(post).use { response ->
-                resultFile.writeText(EntityUtils.toString(response.getEntity())) // Receipt OCR result in JSON
+                System.out.println(EntityUtils.toString(response.getEntity()))
             }
         }
     }
