@@ -9,7 +9,7 @@ import org.apache.http.util.EntityUtils
 
 fun ReceiptOcr(file_name: String): String {
     val receiptOcrEndpoint = "https://ocr.asprise.com/api/v1/receipt" // Receipt OCR API endpoint
-    val imageFile = File("receipt.png")
+    val imageFile = File(file_name)
     val output = ""
 
     HttpClients.createDefault().use { client ->
