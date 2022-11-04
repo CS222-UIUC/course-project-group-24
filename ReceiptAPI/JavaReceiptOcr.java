@@ -14,7 +14,6 @@ public class JavaReceiptOcr {
 	public static void main(String[] args) throws Exception {
 		String receiptOcrEndpoint = "https://ocr.asprise.com/api/v1/receipt"; // Receipt OCR API endpoint
 		File imageFile = new File("receipt.png");
-		File resultFile = new File("result.JSON");
 
 		//System.out.println("=== Java Receipt OCR Demo - Need help? Email support@asprise.com ===");
 
@@ -28,7 +27,7 @@ public class JavaReceiptOcr {
 				.build());
 
 			try (CloseableHttpResponse response = client.execute(post)) {
-				resultFile.writeText(EntityUtils.toString(response.getEntity())); // Receipt OCR result in JSON
+				System.out.println(EntityUtils.toString(response.getEntity())) // Receipt OCR result in JSON
 			}
 		}
 	}
